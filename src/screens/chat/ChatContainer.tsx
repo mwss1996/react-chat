@@ -58,17 +58,13 @@ export function ChatContainer(props: ChatContainerProps) {
 			/>
 		));
 	if (messageComponents.length === 0) {
-		setTimeout(
-			() =>
-				dispatch(
-					createMessage(
-						new Date(),
-						"Welcome! How can i help you?",
-						chatUserIds[0],
-						(chat as ChatType).id
-					)
-				),
-			500
+		dispatch(
+			createMessage(
+				new Date(),
+				"Welcome! How can i help you?",
+				chatUserIds[0],
+				(chat as ChatType).id
+			)
 		);
 	}
 	if (APIResult.isLoading || APIResult.message) {
