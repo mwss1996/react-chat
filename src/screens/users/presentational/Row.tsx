@@ -36,7 +36,10 @@ export function Row(props: RowProps) {
 	return (
 		<Link style={styles.container} to={props.linkTo}>
 			<div style={styles.leftColumn}>
-				<img style={styles.image} src="./robot.png"></img>
+				<img
+					style={styles.image}
+					src="/react-chat/assets/robot.png"
+				></img>
 			</div>
 			<div style={styles.rightColumn}>
 				<div style={styles.name}>{props.name}</div>

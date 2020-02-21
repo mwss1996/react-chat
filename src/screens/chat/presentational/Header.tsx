@@ -56,7 +56,7 @@ export function Header(props: HeaderProps) {
 					/>
 				</Link>
 			)}
-			<img style={styles.image} src="./robot.png"></img>
+			<img style={styles.image} src="/react-chat/assets/robot.png"></img>
 			<div style={styles.title}>{props.title}</div>
 		</div>
 	);
