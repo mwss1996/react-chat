@@ -25,7 +25,7 @@ export function UsersContainer() {
 			let lastMessageText = undefined;
 			if (chat) {
 				const lastMessage = Object.values(messages)
-					.filter(message => message.chatId == chat.id)
+					.filter(message => message.chatId == (chat as ChatType).id)
 					.sort(
 						(a, b) => b.dateTime.getTime() - a.dateTime.getTime()
 					);

@@ -40,7 +40,7 @@ interface MessageProps {
 }
 export function Message(props: MessageProps) {
 	return (
-		<div class="message" style={styles.outerContainer}>
+		<div className="message" style={styles.outerContainer}>
 			<div
 				style={{
 					...styles.container,

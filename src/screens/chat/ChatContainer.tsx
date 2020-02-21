@@ -65,7 +65,7 @@ export function ChatContainer(props: ChatContainerProps) {
 						new Date(),
 						"Welcome! How can i help you?",
 						chatUserIds[0],
-						chat?.id
+						(chat as ChatType).id
 					)
 				),
 			500
@@ -95,7 +95,7 @@ export function ChatContainer(props: ChatContainerProps) {
 									new Date(),
 									inputValue,
 									session.loggedUserId,
-									chat.id
+									(chat as ChatType).id
 								)
 							);
 							setTimeout(() => {
@@ -111,7 +111,7 @@ export function ChatContainer(props: ChatContainerProps) {
 													.substring(0, 100)
 													.trim() + "...",
 												chatUserIds[0],
-												chat?.id
+												(chat as ChatType).id
 											)
 										);
 										setAPIResult({

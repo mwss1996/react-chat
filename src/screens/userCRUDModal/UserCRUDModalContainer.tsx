@@ -4,7 +4,7 @@ import { UserCRUDModal } from "./presentational/UserCRUDModal";
 import { useHistory } from "react-router-dom";
 import { createUser } from "../../store/reducers/users/actions";
 
-export function UserCRUDModalContainer(props) {
+export function UserCRUDModalContainer() {
 	const dispatch = useDispatch();
 	let history = useHistory();
 	const inputRef = React.useRef<HTMLInputElement>(null);
