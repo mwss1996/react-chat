@@ -28,26 +28,16 @@ export interface StoreStateType {
 	session: SessionType;
 }
 const loggedUserId: string = uuidv4();
-const user1: string = uuidv4();
-const user2: string = uuidv4();
-const user3: string = uuidv4();
+const robot: string = uuidv4();
 export const EMPTY_STATE: StoreStateType = {
 	users: {
 		[loggedUserId]: {
 			id: loggedUserId,
 			name: ""
 		},
-		[user1]: {
-			id: user1,
-			name: "Robotson"
-		},
-		[user2]: {
-			id: user2,
-			name: "Alfredson"
-		},
-		[user3]: {
-			id: user3,
-			name: "Whinderson"
+		[robot]: {
+			id: robot,
+			name: "Robot"
 		}
 	},
 	chats: {},
